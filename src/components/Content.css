@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #ecb8d2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: var(--primary-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  background: #fff;
+  height: auto;
+  width: 30%;
+  padding: 2em 3.5em 3em;
+  border-radius: 2px;
+  color: var(--primary-color);
+}
+.quote-icon {
+  margin-right: 10px;
+}
+
+#text {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#author {
+  text-align: right;
+  margin-top: 1em;
+  font-size: 1.1rem;
+}
+
+.quote-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#tweet-quote,
+#tumblr-quote {
+  color: #fff;
+  background-color: var(--primary-color);
+  margin: 4px;
+  border-radius: 3px;
+}
+
+#tweet-quote {
+  padding: 10px 13px;
+}
+
+#tumblr-quote {
+  padding: 10px 15px;
+}
+#tweet-quote i,
+#tumblr-quote i {
+  font-size: 15px;
+}
+
+#new-quote {
+  font-size: 0.9rem;
+  padding: 11px 20px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
